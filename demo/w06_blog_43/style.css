@@ -21,6 +21,15 @@ body {
     letter-spacing: 1px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-01);
+}
+
 .blogs {
     padding: 2rem 1.5rem;
 
@@ -63,7 +72,6 @@ body {
         font-size: 1rem;
         margin: 0.5rem 0;
         letter-spacing: 1px;
-        color: var(--text-01);
     }
 
     p {
@@ -74,5 +82,11 @@ body {
     a {
         text-transform: capitalize;
         color: var(--text-03);
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .blogs-center {
+        grid-template-columns: 1fr 1fr;
     }
 }
