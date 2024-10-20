@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+:root {
+    --border-radius: 3px;
+
+    /* color */
+    --page-bgc: #0A0A0A;
+    --base-bgc: #141414;
+    --primary: #409EFF;
+    --text-01: #E5EAF3;
+    --text-02: #CFD3DC;
+    --text-03: #A3A6AD;
+
+}
+
+body {
+    background-color: var(--page-bgc);
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.blogs {
+    padding: 2rem 1.5rem;
+
+    & .section-title h2 {
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+    }
+}
+
+.blogs-center {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.blog {
+    background-color: var(--base-bgc);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+
+    img {
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+    }
+}
+
+.blog-content {
+    margin-top: 0.5rem;
+
+    span {
+        text-transform: uppercase;
+        color: var(--primary);
+        letter-spacing: 1.5px;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        letter-spacing: 1px;
+        color: var(--text-01);
+    }
+
+    p {
+        color: var(--text-02);
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        text-transform: capitalize;
+        color: var(--text-03);
+    }
+}
