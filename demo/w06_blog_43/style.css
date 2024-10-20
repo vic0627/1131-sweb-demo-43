@@ -89,7 +89,6 @@ h6 {
     .blogs-center {
         grid-template-columns: 1fr 1fr;
     }
-
 }
 
 @media screen and (min-width: 550px) {
@@ -101,5 +100,29 @@ h6 {
 @media screen and (min-width: 800px) {
     .blogs-center {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 976px) {
+    .blogs-center {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 976px) {
+    .blogs-center {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .blogs-center {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blogs-center {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
