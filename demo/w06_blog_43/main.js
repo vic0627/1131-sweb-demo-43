@@ -4,10 +4,10 @@ import img2 from "/images/photo-2.jpg";
 import img3 from "/images/photo-3.jpg";
 import img4 from "/images/photo-4.jpg";
 import img5 from "/images/photo-5.jpg";
-// import img6 from "/images/photo-6.jpg";
-// import img7 from "/images/photo-7.jpg";
-// import img8 from "/images/photo-8.jpg";
-// import img9 from "/images/photo-9.jpg";
+import img6 from "/images/photo-6.jpg";
+import img7 from "/images/photo-7.jpg";
+import img8 from "/images/photo-8.jpg";
+import img9 from "/images/photo-9.jpg";
 
 const $blogsCenter = document.querySelector(".blogs-center");
 
@@ -31,32 +31,19 @@ const createBlog = ({ src, title }) => `
 </article>
 `;
 
-$blogsCenter.innerHTML += createBlog({
-  src: img1,
-  title: "seven reasons shy coffee is awesome",
-});
-
-$blogsCenter.innerHTML += createBlog({
-  src: img2,
-  title: "eight reasons shy coffee is awesome",
-});
-
-$blogsCenter.innerHTML += createBlog({
-  src: img3,
-  title: "nine reasons shy coffee is awesome",
-});
-
-$blogsCenter.innerHTML += createBlog({
-  src: img4,
-  title: "ten reasons shy coffee is awesome",
-});
-
-$blogsCenter.innerHTML += createBlog({
-  src: img5,
-  title: "eleven reasons shy coffee is awesome",
-});
-
-$blogsCenter.innerHTML += createBlog({
-  src: img6,
-  title: "twelve reasons shy coffee is awesome",
+[
+  { src: img1, num: "one" },
+  { src: img2, num: "two" },
+  { src: img3, num: "three" },
+  { src: img4, num: "four" },
+  { src: img5, num: "five" },
+  { src: img6, num: "six" },
+  { src: img7, num: "seven" },
+  { src: img8, num: "eight" },
+  { src: img9, num: "nine" },
+].forEach(({ src, num }) => {
+  $blogsCenter.innerHTML += createBlog({
+    src,
+    title: `${num} reasons shy coffee is awesome`,
+  });
 });
