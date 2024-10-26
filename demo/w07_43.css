@@ -1,3 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+:root {
+    --border-radius: 3px;
+
+    /* color */
+    --page-bgc: #0A0A0A;
+    --base-bgc: #141414;
+    --primary: #409EFF;
+    --text-01: #E5EAF3;
+    --text-02: #CFD3DC;
+    --text-03: #A3A6AD;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #141414;
+    background-color: var(--page-bgc);
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--text-01);
+
+
+    & #nav-center {
+        display: flex;
+        justify-content: space-between;
+        min-width: 300px;
+
+        & li {
+            list-style: none;
+
+            & a {
+                text-decoration: none;
+                color: var(--base-bgc);
+            }
+        }
+    }
+}
+
+#show-class-demo {
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 60px);
 }
