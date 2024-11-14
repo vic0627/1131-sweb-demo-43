@@ -1,12 +1,12 @@
-const $blogsCenter = document.querySelector(".blogs-center");
+const $blogsCenter = document.querySelector('.blogs-center')
 
-const createBlog = ({ src, title }) => `
+const createBlog = ({ src, title, icon }) => `
 <article class="blog">
     <img src="${src}" />
     <div class="blog-content">
       <span>
         lifestyle
-        <i class="fa-solid fa-mug-saucer"></i>
+        <i class="fa-solid fa-${icon ? 'mug-saucer' : 'globe'}"></i>
       </span>
       <h3>${title}</h3>
       <p>
@@ -18,21 +18,22 @@ const createBlog = ({ src, title }) => `
       <a href="javascript:;">read more</a>
     </div>
 </article>
-`;
+`
 
-[
-  "one",
-  "two",
-  "three",
-  "four",
-  "five",
-  "six",
-  "seven",
-  "eight",
-  "nine",
+;[
+  'one',
+  'two',
+  'three',
+  'four',
+  'five',
+  'six',
+  'seven',
+  'eight',
+  'nine',
 ].forEach((num, i) => {
   $blogsCenter.innerHTML += createBlog({
     src: `./images/photo-${i + 1}.jpg`,
     title: `${num} reasons shy coffee is awesome`,
-  });
-});
+    icon: i !== 1 && i !== 5,
+  })
+})
