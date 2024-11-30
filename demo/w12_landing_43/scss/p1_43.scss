@@ -1,0 +1,98 @@
+@import "global";
+
+.p1-container {
+  padding: 2rem 0;
+
+  .cards-center {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 0.5rem; */
+    width: 90vw;
+    max-width: 1170px;
+    min-width: 300px;
+    margin: 0 auto;
+    /* max-width: 500px; */
+  }
+
+  .card {
+    background: #ffffff;
+    padding: 0.5rem;
+    text-align: center;
+    max-width: 300px;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+
+    h4 {
+        margin-top: .5rem;
+    }
+
+    p {
+        margin: .5rem 0 1.5rem 0;
+    }
+  }
+
+  .author {
+    background: #aaa;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 10px 0 10px 10px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .card-1 {
+    border-color: var(--card-1-border);
+  }
+
+  .card-2 {
+    border-color: var(--card-2-border);
+  }
+
+  .card-3 {
+    border-color: var(--card-3-border);
+  }
+
+  .card-4 {
+    border-color: var(--card-4-border);
+  }
+
+  .btn {
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    border: transparent;
+    border-radius: 0.5rem;
+    letter-spacing: 2px;
+  }
+
+  .btn-1 {
+    color: var(--card-1-color);
+    background: var(--card-1-background);
+    border: 1px solid var(--card-1-color);
+  }
+
+  .btn-2 {
+    color: var(--card-2-color);
+    background: var(--card-2-background);
+    border: 1px solid var(--card-2-color);
+  }
+
+  .btn-3 {
+    color: var(--card-3-color);
+    background: var(--card-3-background);
+    border: 1px solid var(--card-3-color);
+  }
+
+  .btn-4 {
+    color: var(--card-4-color);
+    background: var(--card-4-background);
+    border: 1px solid var(--card-4-color);
+  }
+
+  .img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
