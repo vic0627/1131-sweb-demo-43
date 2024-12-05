@@ -1,0 +1,30 @@
+.p3-container {
+  width: 80vw;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.p3-container > .single-product {
+  width: 100%;
+  box-shadow: 5px 5px 10px 0px #aaa;
+}
+.p3-container > .single-product > .img-wrap {
+  height: 250px;
+}
+.p3-container > .single-product > .img-wrap > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.p3-container > .single-product > footer {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=p3_43.css.map */
