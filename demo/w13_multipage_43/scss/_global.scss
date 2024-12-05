@@ -64,19 +64,19 @@ html {
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
-    // p1 card
-    --card-1-color: #6f193c;
-    --card-1-background: #ffe8f1;
-    --card-1-border: 2px solid #ff69a6;
-    --card-2-color: #1b3a6d;
-    --card-2-background: #ecf4ff;
-    --card-2-border: 2px solid #68a3ff;
-    --card-3-color: #407c40;
-    --card-3-background: #00ff001a;
-    --card-3-border: 2px solid #234623;
-    --card-4-color: #7c6a40;
-    --card-4-background: #e8e4db;
-    --card-4-border: 2px solid #8a8578;
+  // p1 card
+  --card-1-color: #6f193c;
+  --card-1-background: #ffe8f1;
+  --card-1-border: 2px solid #ff69a6;
+  --card-2-color: #1b3a6d;
+  --card-2-background: #ecf4ff;
+  --card-2-border: 2px solid #68a3ff;
+  --card-3-color: #407c40;
+  --card-3-background: #00ff001a;
+  --card-3-border: 2px solid #234623;
+  --card-4-color: #7c6a40;
+  --card-4-background: #e8e4db;
+  --card-4-border: 2px solid #8a8578;
 }
 
 body {
@@ -262,6 +262,18 @@ ul {
 
 /* title */
 .title {
+  text-align: center;
+
+  &-underline {
+    background: var(--primary-500);
+    width: 7rem;
+    height: 0.25rem;
+    margin: 0 auto;
+    margin-top: -1rem;
+  }
+}
+
+.section-title {
   text-align: center;
 
   &-underline {
