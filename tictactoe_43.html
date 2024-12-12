@@ -11,9 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     /> -->
+    <script
+      src="https://www.unpkg.com/chop-dom@1.2.0/dist/chop-dom.min.js"
+      crossorigin
+    ></script>
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/megaMenu_43.css" />
-    <link rel="stylesheet" href="./css/classdemo_43.css" />
+    <link rel="stylesheet" href="./css/tictactoe_43.css" />
     <title>Mega and Dropdown Menu</title>
   </head>
   <body>
@@ -188,14 +192,31 @@
       </div>
     </header>
 
-    <section class="show-classdemo">
-      <iframe
-        id="show-midterm-answer__frame"
-        src=""
-        width="100%"
-        height="100%"
-      ></iframe>
-    </section>
+    <section id="tictactoe" class="tictactoe"></section>
+    <script>
+      const { cdom, append, setInnerText, addClass } = ChopDOM
+
+      const placement = ['x', 'o', 'x', 'o', 'o', 'x', '+', 'o', '+']
+
+      const createListItem = (txt, cname) =>
+        cdom('<li>', setInnerText(txt.toUpperCase()), addClass(cname || txt))
+
+      const $header = cdom(
+        '<header>',
+        append(cdom('<h2>', setInnerText('TicTacToe')))
+      )
+      const $footer = cdom(
+        '<footer>',
+        append(cdom('<button>', setInnerText('Reset Game'), addClass('reset')))
+      )
+      const $board = cdom(
+        '<ul>',
+        addClass('board'),
+        append(...placement.map((e) => createListItem(e, e === '+' && 'plus')))
+      )
+
+      cdom('#tictactoe', append($header, $board, $footer))
+    </script>
 
     <script src="./js/megaMenu_43.js"></script>
     <script src="./js/classdemo_43.js"></script>
