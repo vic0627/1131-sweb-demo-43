@@ -30,7 +30,7 @@
 }
 .div_container_43 article .nav {
   width: 80%;
-  height: 90%;
+  height: calc(100% - 35px);
   margin: 10px auto;
   background-color: #9cbaf3;
 }
@@ -62,6 +62,7 @@
   position: absolute;
 }
 .div_container_43 .picContainer {
+  background-color: #b15412;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -78,6 +79,13 @@
 .div_container_43 footer {
   background-color: rgb(187, 127, 127);
   grid-area: footer;
+}
+@media screen and (max-width: 550px) {
+  .div_container_43 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 1fr 2fr 0.4fr;
+    grid-template-areas: "logo" "header" "article" "aside" "footer";
+  }
 }
 
 /*# sourceMappingURL=div_43.css.map */
