@@ -1,0 +1,76 @@
+.final_panel {
+  --main: #016ff9;
+  margin: 0 auto;
+  background: #f1f1ff;
+  border: 1px solid #ddd;
+  width: 360px;
+  padding: 0 40px;
+  margin-top: 60px;
+  border-radius: 5px;
+}
+.final_panel .pricing-plan {
+  max-width: 280px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.final_panel .pricing-plan img:nth-child(1) {
+  width: 200px;
+}
+.final_panel .pricing-plan .pricing-header {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #888;
+}
+.final_panel .pricing-plan .pricing-price {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.final_panel .pricing-plan .pricing-button {
+  display: block;
+  text-align: center;
+  border: 2px solid var(--main);
+  color: var(--main);
+  border-radius: 10px;
+  padding: 7.5px 30px;
+  margin: 40px 0;
+}
+.final_panel .pricing-plan:nth-child(2) .pricing-button {
+  color: #fff;
+  background: var(--main);
+}
+
+li,
+span {
+  color: var(--main);
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .final_panel {
+    padding: auto;
+    width: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  .final_panel:before, .final_panel:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 33.333333%;
+    background: #ddd;
+  }
+  .final_panel:after {
+    left: auto;
+    right: 33.333333%;
+  }
+}
+
+/*# sourceMappingURL=final_p2_43.css.map */
